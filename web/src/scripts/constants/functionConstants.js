@@ -1,0 +1,3 @@
+module.exports={
+    ON_FUNCTION_SELECT:'ON_FUNCTION_SELECT'
+}

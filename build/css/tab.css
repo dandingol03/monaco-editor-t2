@@ -1,0 +1,33 @@
+.Tab-Container{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    /*background-color: rgba(34, 34, 34, 0.7);*/
+    background: #333;
+    height: 35px;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.Tab-Container ul{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    height: 35px;
+}
+
+.Tab-Container li{
+    font-size: 12px;
+    min-width: 125px;
+    cursor: pointer;
+    background-color: #444;
+    color: #eee;
+    margin-right: 1px;
+}
+
+.Tab-Container li.activated
+{
+    background-color: #222;   
+    color:#fff;
+}

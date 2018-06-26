@@ -1,0 +1,2159 @@
+
+body{
+    padding:0;
+    margin:0;
+}
+
+
+.vbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+
+.full-size, .full-size-relative, .full-size-absolute {
+    height: 100%;
+    width: 100%; }
+
+.full-size-relative {
+    position: relative; }
+
+.full-size-absolute {
+    position: absolute; }
+
+
+li.list-item{
+    border-bottom: 1px solid #00bfff;
+}
+
+.File-Browser{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color:#fff;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+
+ul.File-Browser{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background: #333;
+    overflow: auto;
+    padding-left:10px;
+}
+
+.File-Browser ul {
+    background-color: transparent;
+    margin-top: 4px;
+    list-style: none;
+}
+
+.File-Browser .folder{
+    
+}
+
+.File-Browser .folder.activate> :first-child{
+      background-color: #555 !important;
+}
+
+
+
+.File-Browser .file{
+    padding-left: 19px;
+    cursor: default;
+}
+
+.File-Browser .file.activate{
+    background-color: #555 !important;
+}
+
+.File-Browser .file.modified{
+    color:#498ec3
+}
+
+.File-Browser .file.not_added{
+    color:#ec542e;
+}
+
+.File-Browser .file.staged{
+    color:#429c52;
+}
+
+.File-Browser .folder div.right{
+    cursor: pointer;
+    width: 14px;
+    height:14px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-right.png) 0 0% no-repeat;
+    background-size: 14px 14px;
+}
+
+.File-Browser .folder div.down{
+    cursor: pointer;
+    width: 14px;
+    height:14px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-down.png) 0 34% no-repeat;
+    background-size: 12px 12px;
+}
+
+
+
+
+
+.File-Browser .folder .icon-folder{
+    background: url(../../public/icons/icon-font-special.png) 0 30% no-repeat;
+    background-size:14px 14px;
+    display:block;
+    height:14px;
+    width: 14px;
+    margin-left: 7px;
+}
+
+.File-Browser  .icon-js-file{
+    background: url(../../public/icons/icon-js-file.png) 0 30% no-repeat;
+    background-size:14px 14px;
+    display:block;
+    height:16px;
+    width: 14px;
+    margin-left: 0px;
+}
+
+.File-Browser  .icon-png-file{
+    background: url(../../public/icons/icon-png-file.png) 0 30% no-repeat;
+    background-size:14px 18px;
+    display:block;
+    height:16px;
+    width: 14px;
+    margin-left: 0px;
+}
+
+.File-Browser  .icon-mp3-file{
+    background: url(../../public/icons/icon-mp3-file.png) 50% 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:16px;
+    width: 14px;
+    margin-left: 0px;
+}
+
+.sk-spinner.aqua .sk-rotating-plane{
+    background: aqua;
+    width: 12px !important;
+    height:12px !important;
+}
+
+
+.file-tree{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color:#333;
+    font-size: 0.8em;
+    
+}
+
+.file-tree li {
+    padding: 3px 0 2px 16px;
+}
+
+.file-tree li {
+
+}
+
+.file-tree .hitarea{
+    background: url(../../public/images/treeview-default.gif) -64px -25px no-repeat;
+    height: 16px;
+    width: 16px;
+    margin-left: -20px;
+    float: left;
+    cursor: pointer;
+}
+
+.file-tree span.folder {
+    
+
+    background: url(../../public/icons/icon-font-special.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.file-tree span.folder, .file-tree span.file {
+    padding: 1px 0 1px 16px;
+    display: block;
+}
+
+.file-tree ul {
+    background-color: transparent;
+    margin-top: 4px;
+}
+
+.file-tree li.last {
+    background-position: 0 -1766px;
+}
+
+.file-tree span.file {
+    background: url(../../public/images/file.gif) 0 0 no-repeat;
+}
+
+.file-tree span.file.js{
+    background: url(../../public/icons/icon-js.png) 0 -32% no-repeat;
+    background-size:18px 18px;
+}
+
+.file-tree span.file.jsx{
+    background: url(../../public/icons/icon-jsx.png) 0 -32% no-repeat;
+    background-size:16px 16px;
+}
+
+.file-tree span.file {
+    padding: 1px 0 1px 20px;
+    display: block;
+    margin-left: 18px;
+}
+
+.file-tree ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.file-tree li.collapsable, .file-tree li.expandable {
+    background-position: 0 -176px;
+}
+
+.file-tree .folder span{
+    background: url(../../public/icons/icon-font-special.png) 0 -10% no-repeat;
+    background-size:13px 13px;
+    padding:1px 0 1px 20px;
+    display:block;
+    height:20px;
+    margin-left:20px;
+    cursor: default;
+}
+
+.folder div.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-right.png) 0 -50% no-repeat;
+    background-size: 16px 16px;
+}
+
+
+.file-tree .folder div.down{
+    cursor: pointer;
+    width: 20px;
+    height:20px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-down.png) 0 -4% no-repeat;
+    background-size: 12px 12px;
+}
+
+
+.design-switch .option{
+    cursor: pointer;
+    margin-bottom: 1px;
+}
+
+.design-switch .option.selected{
+    cursor: default;
+    margin-bottom: 6px;
+}
+
+.Console.none{
+    display: none !important;
+}
+
+.Grid{
+    background-color: #555;
+}
+
+
+
+.triangle-left{
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    background: url(../../public/icons/icon-triangle-left.png) 50% 50% no-repeat;
+    background-size: 17px 20px;
+}
+
+.phone-home{
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    background: url(../../public/icons/icon-phone-home.png) 50% 50% no-repeat;
+    background-size: 16px 16px;
+}
+
+.phone-square{
+    cursor: pointer;
+    width: 22px;
+    height: 30px;
+    background: url(../../public/icons/icon-phone-square.png) 50% 50% no-repeat;
+    background-size: 22px 22px;
+}
+
+.phone-wifi{
+    cursor: pointer;
+    width: 20px;
+    height: 30px;
+    background: url(../../public/icons/icon-phone-wifi.png) 50% 50% no-repeat;
+    background-size: 18px 18px;
+}
+
+.phone-battery{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: url(../../public/icons/icon-phone-battery.png) 50% 50% no-repeat;
+    background-size: 28px 28px;
+}
+
+
+
+.LayoutInflater{
+    
+    font-family: sans-serif;
+}
+
+.layout{
+
+}
+
+.layout.row{
+    height: 30px;
+    padding:6px;
+    color:#fff;
+    margin-bottom: 4px;
+    font-size: 11px;
+    cursor: move
+}
+
+.layout.row.translucent{
+    opacity: 0.5;
+}
+
+.palette{
+
+}
+
+.palette-row{
+    background: #444;
+}
+
+.palette-row .special{
+    background: url(../../public/icons/icon-font-special.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.palette-row .icon-textview{
+    background: url(../../public/icons/icon-textview.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.palette-row .icon-button{
+    background: url(../../public/icons/icon-button.png) -38% 30% no-repeat;
+    background-size:20px 18px;
+    display:block;
+    height:20px;
+    width: 24px;
+}
+
+.palette-row .icon-linearlayout-row{
+    background: url(../../public/icons/icon-linearlayout-row.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.palette-row .icon-linearlayout-column{
+    background: url(../../public/icons/icon-linearlayout-column.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.ui-instance{
+    
+}
+
+.ui-instance .icon-ref{
+    background: url(../../public/icons/icon-ref.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.ui-instance .activate .icon-ref{
+    background: url(../../public/icons/icon-white-ref.png) 0 30% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.ui-instance .instance{
+    cursor: pointer;
+    color:#ddd;
+}
+
+.ui-instance .instance.activate{
+    background-color:#13908b;
+    color:#fff;
+}
+
+.translucent{
+    opacity:0.5;
+}
+
+.text-view{
+
+}
+
+.text-view.translucent{
+    background: #aaa;
+    color:#aaa
+}
+
+.text-view.palette{
+    border:1px dashed #3989b9;
+}
+
+.text-view.palette.clicked{
+    border:1px dashed #ff6b44;
+}
+
+.Properties{
+    font-family: sans-serif;
+    background: url(../../public/images/properties_bg.jpeg) 0 0 no-repeat;
+}
+
+.Properties .basic{
+    font-size: 14px;
+    color:#ccc;
+    border-top:2px solid #222;
+    padding-left: 5px;
+    background: #444;
+    background: url(../../public/images/properties_bg.jpeg) 0 0 no-repeat;
+}
+
+.Properties input{
+    background: #eee;
+    border: 0;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #9236a2;
+    width:100%;
+    text-align: center;
+    outline: none;
+    height: 16px;
+}
+
+.Properties input:focus{
+    border: 2px solid #4d92cc;
+}
+
+.Properties input.border-bottom{
+    color:rgb(111, 195, 223);
+}
+
+.Properties input.border-bottom:focus{
+    border:0px;
+    border-bottom: 1px solid rgb(111, 195, 223) !important;
+}
+
+.Properties select{
+    width: 120px;
+}
+
+.Properties button{
+    cursor: pointer;
+}
+
+.Properties .button{
+    cursor: pointer;
+}
+
+.Properties div.color-picker{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/color-palette.png) 20% 40% no-repeat;
+    background-size: 14px 14px;    
+}
+
+.Properties div.picker-close{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-check.png) 20% 40% no-repeat;
+    background-size: 14px 14px;    
+}
+
+.Properties div.padding-picker-close{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-padding-check.png) 20% 40% no-repeat;
+    background-size: 14px 14px;   
+}
+
+.Properties div.picker-config{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-config.png) 20% 40% no-repeat;
+    background-size: 14px 14px;    
+}
+
+
+.custom-Select{
+
+}
+.custom-Select .Select-control {
+    height: 26px;
+}
+
+.custom-Select .Select-control .Select-placeholder {
+    line-height: 22px;
+}
+
+.custom-Select .Select-control .Select-value {
+    line-height: 22px !important;
+    color: #0e5c90 !important;
+}
+.custom-Select  .Select-control .Select-value .Select-value-label {
+    line-height: 22px;
+    color: #0e5c90 !important;
+}
+
+
+.custom-Select .Select-control .Select-input {
+    height: 22px;
+    color: #0e5c90 !important;
+}
+
+.Select-option{
+    color: #0e5c90 !important;
+}
+
+.unvisible{
+    display: none;
+}
+
+.Container{
+    display:flex;
+    flex:1 1 auto;
+    border:1px dashed #4f99e2;
+    position: relative;
+    padding: 0px;
+    padding-top:0px;
+    overflow: hidden;
+}
+
+.Container.column{
+    flex-direction: column
+}
+
+.Container.row{
+    flex-direction: row
+}
+
+.Container .tag{
+    position: absolute;
+    top:4px;
+    left:4px;
+    color:#fff;
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.LayoutInflater .View{
+    display: flex;
+    
+    padding: 4px;
+    padding-top:10px;
+}
+
+
+.LayoutInflater .View.children{
+    padding:0px;
+    border:0px;
+}
+
+.LayoutInflater .View.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .View.column{
+    flex-direction: column;
+}
+
+.LayoutInflater .View .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 6px;
+    font-family: sans-serif;
+}
+
+.LayoutInflater .View.clicked{
+     border:2px dashed #ff6b44 ;
+}
+
+.LayoutInflater .AnimatedView{
+    display: flex;
+    position: relative;
+    padding: 4px;
+    padding-top:10px;
+}
+
+.LayoutInflater .AnimatedView.children{
+    padding:0px;
+    border:0px;
+}
+
+.LayoutInflater .AnimatedView.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .AnimatedView.column{
+    flex-direction: column;
+}
+
+.LayoutInflater .AnimatedView .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 6px;
+    font-family: sans-serif;
+}
+
+.LayoutInflater .AnimatedView.clicked{
+     border:2px dashed #ff6b44 !important;
+}
+
+.LayoutInflater .ScrollView{
+    display: flex;
+    position: relative;
+    padding: 4px;
+    padding-top:10px;
+}
+
+.LayoutInflater .ScrollView span.up{
+    width: 13px;
+    height: 13px;
+    background: url(../../public/icons/icon-scrollview-up.png) 0 10% no-repeat;
+    background-size: 100% 100%;
+}
+
+.LayoutInflater .ScrollView span.down{
+    width: 20px;
+    height: 20px;
+    background: url(../../public/icons/icon-scrollview-down.png) 0 10% no-repeat;
+    background-size: 100% 100%;
+}
+
+.LayoutInflater .ScrollView.children{
+    padding:0px;
+    border:0px;
+}
+
+.LayoutInflater .ScrollView.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .ScrollView.column{
+    flex-direction: column;
+}
+
+.LayoutInflater .ScrollView .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 6px;
+    font-family: sans-serif;
+}
+
+.LayoutInflater .ScrollView.clicked{
+     border:2px dashed #ff6b44 !important;
+}
+
+.LayoutInflater .ScrollableTabView{
+    display: flex;
+    position: relative;
+    padding: 4px;
+    padding-top:10px;
+}
+
+.LayoutInflater .ScrollableTabView .tabLabel{
+    cursor: pointer;
+}
+
+.LayoutInflater .ScrollableTabView.children{
+    padding:0px;
+    border:0px;
+}
+
+.LayoutInflater .ScrollableTabView.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .ScrollableTabView.column{
+    flex-direction: column;
+}
+
+.LayoutInflater .ScrollableTabView.clicked{
+    border:2px dashed #ff6b44 !important;
+}
+
+.LayoutInflater .Toolbar{
+    display: flex;
+}
+
+.LayoutInflater .Toolbar.clicked{
+    border:2px dashed #ff6b44;
+}
+
+.LayoutInflater .Image{
+    display: flex;
+    position: relative;
+    padding: 4px;
+    padding-top:10px;
+}
+
+.LayoutInflater .Image.children{
+    padding:0px;
+    border:0px;
+}
+
+.LayoutInflater .Image.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .Image.column{
+    flex-direction: column;
+}
+
+.LayoutInflater .Image .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 6px;
+    font-family: sans-serif;
+}
+
+.LayoutInflater .Image.clicked{
+     border:2px dashed #ff6b44;
+}
+
+
+.LayoutInflater .ListView{
+    display: flex;
+    border:1px dashed #4f99e2;
+    position: relative;
+    padding: 4px;
+    padding-top:30px;
+    box-shadow:1px 10px 5px #555;
+}
+
+
+.LayoutInflater .ListView.children{
+    padding:4px;
+    border:0px;
+    box-shadow:1px 10px 5px #555;
+}
+
+.LayoutInflater .ListView.column{
+    flex-direction: column;
+}
+
+.LayoutInflater .ListView .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 6px;
+    font-family: sans-serif;
+}
+
+.LayoutInflater .ListView.clicked{
+     border:2px dashed #ff6b44;
+}
+
+.LayoutInflater .Toolbar.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .Toolbar.column{
+    flex-direction: column
+}
+
+.LayoutInflater .TextInputWrapper{
+    display: flex;
+    background: transparent;
+}
+
+.LayoutInflater .TextInputWrapper.row{
+    flex-direction: row;
+}
+
+.LayoutInflater .TextInputWrapper .cancel{
+    opacity: 0;
+    animation: fadeOut 1s;
+}
+
+.LayoutInflater .TextInputWrapper .cancel.focused{
+    opacity: 1;
+    animation: fadeIn 1s ease;
+}
+
+.LayoutInflater .DatePickerInflater{
+    display: flex;
+    background: transparent;
+}
+
+.LayoutInflater .DatePickerInflater.row{
+    flex-direction: row;
+}
+
+
+.LayoutInflater .TextInput{
+    display: flex;
+    background: transparent;
+}
+
+.LayoutInflater .TextInput.row{
+    flex-direction: row;
+}
+
+
+@keyframes fadeOut{
+  0%{opacity:1} 
+  100%{opacity:0} 
+}
+
+@keyframes fadeIn{ 
+  0%{opacity:0} 
+  100%{opacity:1;} 
+} 
+
+.TouchableOpacity{
+    display: flex;
+    padding: 4px;
+    padding-top:20px;
+}
+.TouchableOpacity.children{
+    padding:0px;
+    padding-top:0px;
+    padding-bottom: 0px;
+}
+
+.TouchableOpacity.row{
+    flex-direction: row;
+}
+
+.TouchableOpacity.column{
+    flex-direction: column;
+}
+
+.TouchableOpacity .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 6px;
+    font-family: sans-serif;
+}
+
+.TouchableOpacity.clicked{
+    border:2px dashed #ff6b44;
+}
+
+.Icon{
+    display: flex;
+    position: relative;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Icon .tag{
+     position: absolute;
+    top:4px;
+    left:4px;
+    color:#d61cd6;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.Icon.clicked{
+    border:2px dashed #ff6b44;
+}
+
+.Linear{
+    display: flex;
+    border:1px dashed #4f99e2;
+    position: relative;
+    padding: 4px;
+}
+
+.Linear.row{
+    flex-direction: row;
+}
+
+.Linear.column{
+    flex-direction: column;
+}
+
+.Linear .tag{
+    position: absolute;
+    top:4px;
+    left:4px;
+    color:#fff;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.Panel{
+    font-family: sans-serif;
+}
+
+.Panel .header{
+    background-color: #444;
+    cursor:pointer
+}
+
+.Panel .header.clicked{
+    background-color: #4c8aca;
+    cursor: default
+}
+
+.Component-Toolbar{
+    
+}
+
+.Component-Toolbar span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-Toolbar span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-Toolbar .icon-view{
+    width: 15px;
+    height:15px;
+    background: url(../../public/icons/icon-toolbar.png) 0 0% no-repeat;
+    background-size: 15px 15px;
+}
+
+.Component-Toolbar span{
+    color:#ddd;
+}
+
+.Component-Toolbar .clicked span{
+    color:#fff;
+}
+
+.Component-Toolbar span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-Toolbar .label{
+    
+}
+
+.Component-Toolbar .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-View{
+    
+}
+
+.Component-View span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-View span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-View .icon-view{
+    width: 15px;
+    height:15px;
+    background: url(../../public/icons/icon-view.png) 0 0% no-repeat;
+    background-size: 15px 15px;
+}
+
+.Component-View span{
+    color:#ddd;
+}
+
+.Component-View span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-View.clicked span.label{
+    color:#fff;
+}
+
+.Component-View .label{
+    
+}
+
+.Component-View .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-TouchableOpacity{
+    
+}
+
+.Component-TouchableOpacity span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-TouchableOpacity span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-TouchableOpacity .icon-touchableOpacity{
+    width: 17px;
+    height:19px;
+    background: url(../../public/icons/icon-touchable-opacity.png) 100% 0% no-repeat;
+    background-size: 23px 21px;
+}
+
+.Component-TouchableOpacity span{
+    color:#ddd;
+}
+
+.Component-TouchableOpacity span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-TouchableOpacity.clicked span.label{
+    color:#fff;
+}
+
+.Component-TouchableOpacity .label{
+    font-size: 13px;
+}
+
+.Component-TouchableOpacity .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-Modal{
+    
+}
+
+.Component-Modal span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-Modal span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-Modal .icon-modal{
+    width: 17px;
+    height:19px;
+    background: url(../../public/icons/icon-modal.png) 40% 42% no-repeat;
+    background-size: 13px 13px;
+}
+
+.Component-Modal span{
+    color:#ddd;
+}
+
+.Component-Modal span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+
+.Component-Modal .label{
+    
+}
+
+.Component-Modal.clicked span.label{
+    color:'#fff'
+}
+
+.Component-Modal .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+
+.Component-Image{
+    
+}
+
+.Component-Image span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-Image span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-Image .icon-image{
+    width: 17px;
+    height:19px;
+    background: url(../../public/icons/icon-image.png) 30% 70% no-repeat;
+    background-size: 15px 15px;
+}
+
+.Component-Image span{
+    color:#ddd;
+}
+
+.Component-Image span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-Image .label{
+    
+}
+
+.Component-Image.clicked span.label{
+    color:#fff;
+}
+
+.Component-Image .label.selected{
+    color:#fff;
+}
+
+
+.Component-Image .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-ListView{
+    
+}
+
+.Component-ListView span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-ListView span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-ListView .icon-listview{
+    width: 15px;
+    height:15px;
+    background: url(../../public/icons/icon-listview.png) 0 0% no-repeat;
+    background-size: 15px 15px;
+}
+
+.Component-ListView span{
+    color:#ddd;
+}
+
+.Component-ListView span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-ListView.clicked span.label{
+    color:#fff;
+}
+
+.Component-ListView .label{
+    
+}
+
+.Component-ListView .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-ScrollView{
+    
+}
+
+.Component-ScrollView span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-ScrollView span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-ScrollView .icon-scrollview{
+    width: 15px;
+    height:15px;
+    background: url(../../public/icons/icon-scrollview.png) 0 0% no-repeat;
+    background-size: 15px 15px;
+}
+
+.Component-ScrollView span{
+    color:#ddd;
+}
+
+.Component-ScrollView span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-ScrollView.clicked span.label{
+    color:#fff;
+}
+
+.Component-ScrollView .label{
+    
+}
+
+.Component-ScrollView .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+
+.Component-AnimatedView{
+    
+}
+
+.Component-AnimatedView span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-right.png) 0 10% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-AnimatedView span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-white-triangle-down.png) 0 32% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-AnimatedView .icon-animatedview{
+    width: 15px;
+    height:15px;
+    background: url(../../public/icons/icon-animatedview.png) 0 0% no-repeat;
+    background-size: 15px 15px;
+}
+
+.Component-AnimatedView span{
+    color:#ddd;
+}
+
+.Component-AnimatedView span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-AnimatedView.clicked span.label{
+    color:#fff;
+}
+
+.Component-AnimatedView .label{
+    
+}
+
+.Component-AnimatedView .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+
+.Functions div.grid{
+    background: transparent;
+}
+
+.Functions div.grid.selected{
+    background: #4e94ce;
+    animation: function-amplify .5s;
+}
+
+.Functions div.icon-project{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-white-functions-project.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+.Functions div.icon-gray-project{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-gray-functions-project.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+.Functions div.icon-file{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-functions-file.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+.Functions div.icon-search{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-white-functions-search.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+
+.Functions div.icon-gray-search{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-gray-functions-search.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+.Functions div.icon-plugin{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-white-functions-plugin.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+
+.Functions div.icon-gray-plugin{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+    background: url(../../public/icons/icon-gray-functions-plugin.png) 0 0% no-repeat;
+    background-size: 30px 30px;
+}
+
+@keyframes function-amplify{
+     0%{background:transparent;}
+     100%{background:#4e94ce;} 
+}
+
+.Git-loader .content{
+    top:60px;
+    animation: GitLoader-fadeOut 1s ease-out;
+}
+.Git-loader .content.visible{
+    top:0px;
+    animation: GitLoader-fadeIn 1s ease-in;
+}
+
+@keyframes GitLoader-fadeIn{
+     0%{top: 60px;}
+     100%{top:0px;} 
+}
+
+@keyframes GitLoader-fadeOut{
+     0%{top: 0px;}
+     100%{top:60px;} 
+}
+
+.Modal{
+
+}
+
+.ActionSheet{
+    bottom:-240px;
+    z-index: 1011;
+    animation: ActionSheet-fadeOut .2s ease-out;
+}
+
+.ActionSheet.visible{
+    bottom:0px;
+    animation: ActionSheet-fadeIn .2s ease-in;
+}
+
+@keyframes ActionSheet-fadeIn{
+     0%{bottom: -200px;}
+     100%{bottom:0px;} 
+}
+
+@keyframes ActionSheet-fadeOut{
+     0%{bottom: 0px;}
+     100%{bottom:-200px;} 
+}
+
+.DatePicker-Modal{
+    bottom:-240px;
+    z-index: 1011;
+    animation: DatePicker-Modal-fadeOut .2s ease-out;
+}
+
+.DatePicker-Modal.visible{
+    bottom:0px;
+    animation: DatePicker-Modal-fadeIn .2s ease-in;
+}
+
+@keyframes DatePicker-Modal-fadeIn{
+     0%{bottom: -200px;}
+     100%{bottom:0px;} 
+}
+
+@keyframes DatePicker-Modal-fadeOut{
+     0%{bottom: 0px;}
+     100%{bottom:-200px;} 
+}
+
+.Component-Container{
+    background-color: #333;
+}
+
+.Component-Container .label{
+    font-size: 13px;
+}
+
+
+.Component-Container .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-Container span{
+    color:#ddd;
+}
+
+.Component-Container span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/triangle-right.png) 0 30% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-Container span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/triangle-down.png) 0 40% no-repeat;
+    background-size: 16px 14px;
+}
+
+.Component-Container span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-Container .icon-container{
+    background: url(../../public/icons/icon-container.png) 0 30% no-repeat;
+    background-size:18px 18px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+
+.Component-Linear{
+    cursor: move;
+}
+
+.Component-Linear span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-right.png) 0 30% no-repeat;
+    background-size: 14px 14px;
+}
+
+.Component-Linear span.down{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-triangle-down.png) 0 40% no-repeat;
+    background-size: 12px 12px;
+}
+
+.Component-Linear span.icon{
+    width: 18px;
+    height:18px;
+    
+}
+
+.Component-Linear .icon-linearlayout-row{
+    background: url(../../public/icons/icon-linearlayout-row.png) 0 12% no-repeat;
+    background-size:16px 16px;
+    display:block;
+    height:20px;
+    width: 20px;
+}
+
+.Code-template{
+    cursor: move
+}
+
+.Code-template.translucent{
+    background: #aaa;
+    
+}
+
+.Code-template .Input{
+    font-size: 12px;
+    padding:2px;
+    width:80px;
+    height:14px;
+    border-width:2px;
+    border-color:#333;
+    border-style:solid;
+}
+
+.Code-template.View{
+    
+}
+
+.Code-template.View .icon-view{
+    width:20px;
+    height:20px;
+    background: url(../../public/icons/icon-view.png) 0 0% no-repeat;
+    background-size: 20px 20px;
+}
+
+.Code-template.View .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.TextInputWrapper{
+    
+}
+
+.Code-template.TextInputWrapper .icon-text-input-wrapper{
+    width:20px;
+    height:20px;
+    background: url(../../public/icons/icon-text-input-wrapper.png) 0 0% no-repeat;
+    background-size: 20px 20px;
+}
+
+.Code-template.TextInputWrapper .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.Toolbar{
+    
+}
+
+.Code-template.Toolbar .icon-toolbar{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-toolbar.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.Toolbar .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.TouchableOpacity{
+    padding:0;
+}
+
+.Code-template.TouchableOpacity .icon-touchable-opacity{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-touchable-opacity.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.TouchableOpacity .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.ListView{
+    padding:0;
+}
+
+.Code-template.ListView .icon-listview{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-listview.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.ListView .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.Icon{
+    padding:0;
+}
+
+.Code-template.Icon .icon-fontawesome{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-fontawesome.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.Icon .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.ScrollView{
+    padding:0;
+}
+
+.Code-template.ScrollView .icon-scrollview{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-scrollview.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.ScrollView .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.ActionSheet{
+    padding:0;
+}
+
+.Code-template.ActionSheet .icon-action-sheet{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-action-sheet.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.ActionSheet .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.Modal{
+    padding:0;
+}
+
+.Code-template.Modal .icon-modal{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-modal.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.Modal .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.Text{
+    padding:0;
+}
+
+.Code-template.Text .icon-text{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-text.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.Text .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+.Code-template.DefaultWidget{
+    padding:0;
+}
+
+.Code-template.DefaultWidget .icon-widget{
+    width:17px;
+    height:17px;
+    background: url(../../public/icons/icon-widget.png) 0 0% no-repeat;
+    background-size: 17px 17px;
+}
+
+.Code-template.DefaultWidget .name{
+    font-size: 12px;
+    margin-top:5px;
+    color:#ccc;
+}
+
+
+@keyframes gradient{ 
+  0%{border-color:#888;} 
+  100%{border-color:#333;} 
+} 
+
+
+@keyframes amplify{
+     0%{color:#888;}
+     100%{color:#333;} 
+}
+
+.Component-text{
+    cursor: move
+}
+
+.Component-text .icon-text{
+     background: url(../../public/icons/icon-text.png) 0 30% no-repeat;
+    background-size:15px 15px;
+    display:block;
+    height:15px;
+    width: 15px;
+}
+
+.Component-text .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+}
+
+.Component-text .rotating{
+    animation: rotating 2s infinite;
+}
+
+
+.Component-text-input-wrapper{
+    cursor: move;
+}
+
+.Component-text-input-wrapper .icon-text-input-wrapper{
+     background: url(../../public/icons/icon-text-input-wrapper.png) 0 30% no-repeat;
+    background-size:15px 15px;
+    display:block;
+    height:15px;
+    width: 15px;
+}
+
+.Component-text-input-wrapper .label{
+    color:#ddd;
+    font-size: 13px;
+}
+
+.Component-text-input-wrapper.clicked span.label{
+    color:#fff;
+}
+
+.Component-text-input-wrapper .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+    color:#ccc;
+}
+
+
+@keyframes rotating{
+    0%{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    } 
+    100%{
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    } 
+  }
+  
+
+.Component-icon{
+    cursor: pointer;
+}
+
+.Component-icon .icon-fontawesome{
+     background: url(../../public/icons/icon-fontawesome.png) 0 30% no-repeat;
+    background-size:15px 15px;
+    display:block;
+    height:15px;
+    width: 15px;
+}
+
+.Component-icon .label{
+    color:#ddd;
+    font-size: 12px;
+}
+
+.Component-icon.clicked span.label{
+    color:#fff;
+}
+
+.Component-icon .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+    color:#ccc;
+}
+
+.Component-action-sheet{
+    cursor: pointer;
+}
+
+.Component-action-sheet .icon-action-sheet{
+     background: url(../../public/icons/icon-action-sheet.png) 0 30% no-repeat;
+    background-size:15px 15px;
+    display:block;
+    height:15px;
+    width: 15px;
+}
+
+.Component-action-sheet .label{
+    color:#ddd;
+    font-size: 12px;
+}
+
+.Component-action-sheet.clicked span.label{
+    color:#fff;
+}
+
+.Component-action-sheet .label.min{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    align-items: center;
+    font-size: 11px;
+    color:#ccc;
+}
+
+
+.Component-Seperator{
+    background: #fff
+}
+
+.Component-Seperator.translucent{
+    background: transparent;
+}
+
+.Component-Seperator span.right{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-blue-triangle-right.png) 0 10% no-repeat;
+    background-size: 17px 17px;
+    position: absolute;
+    top: -8px;
+    left: -20px;
+}
+
+.Component-Seperator span.center{
+    cursor: pointer;
+    width: 18px;
+    height:18px;
+    float:left;
+    background: url(../../public/icons/icon-dark-triangle-right.png) 0 10% no-repeat;
+    background-size: 17px 17px;
+    position: absolute;
+    top: -14px;
+    left: -20px;
+    z-index: 20;
+}
+
+.sk-circle-wrapper{
+    width:30px !important;
+    height:30px !important;
+}
+
+
+.sk-folding-cube .sk-cube{
+    background-color: #fff !important;
+}
+
+.editor-container {
+    background-color: #222;
+}
+
+
+.Text.clicked{
+    border:2px dashed #ff6b44;
+}
+
+.Gallery{
+    font-family: sans-serif;
+}
+
+.cursor-decoration{
+    background: #fff;
+    width:2px !important;
+    
+}
+
+.rodal-modal .rodal-dialog{
+    display: flex !important;
+    flex-direction: column;
+    border-top-left-radius: 6px ;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: sans-serif !important;
+    padding:0 !important;
+}
+
+.rodal-modal .rodal-dialog .header{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: -webkit-linear-gradient(top, #fff, #ccc);
+    padding:4px;
+    
+}
+
+.rodal-modal .rodal-dialog .content{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: rgba(51, 51, 51, 0.9);
+    padding:0;
+}
+
+.rodal-modal .rodal-dialog .content .clicked{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #4e935a;
+}
+
+.rodal-modal .rodal-dialog .button{
+    background: -webkit-linear-gradient(top, #777, #666);
+    padding:4px;
+    padding-left:17px;
+    padding-right:17px;
+    border-radius:4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.rodal-modal .rodal-dialog .panel{
+     width:150px;
+     height:180px;
+     margin-right: 10px;
+     border-width: 1px;
+     border-style:dashed;
+     border-color:transparent;
+}
+
+.rodal-modal .rodal-dialog .panel.clicked{
+    border-color:#138eb7;
+}
+
+.rodal-modal .rodal-dialog .toolbar-panel{
+     width:150px;
+     height:180px;
+     margin-right: 10px;
+     border-width: 1px;
+     border-style: dashed;
+     border-color:transparent;
+}
+
+.rodal-modal .rodal-dialog .toolbar-panel.clicked{
+    border-color:#4e935a;
+}
+
+.library-warning-modal .rodal-dialog{
+    border-radius: 12px;
+    text-align: center;
+}
+
+.rodal-modal.fields-modal{
+
+}
+
+.rodal-modal.fields-modal .plus{
+    cursor: pointer
+}
+
+.rodal-modal.fields-modal .minus{
+    cursor: pointer
+}
+
+::-webkit-scrollbar-thumb{  
+   background-color:#444;  
+   height:50px;  
+   outline-offset:-2px;    
+   -webkit-border-radius:4px;  
+   border: 1px solid #444;  
+}  搜索
+/*---鼠标点击滚动条显示样式--*/  
+::-webkit-scrollbar-thumb:hover{  
+   background-color:#FB4446;  
+   height:50px;  
+   -webkit-border-radius:4px;  
+}  
+/*---滚动条大小--*/  
+::-webkit-scrollbar{  
+   width:8px;  
+   height:8px;  
+}  
+/*---滚动框背景样式--*/  
+::-webkit-scrollbar-track-piece{  
+   background-color:#333;  
+   -webkit-border-radius:0;  
+}

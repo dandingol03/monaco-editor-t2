@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/rodal.css"/>
+    <link rel="stylesheet" href="./css/monaco.css">
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/fontAwesome.css">
+    <link rel="stylesheet" href="./lib/loaders.css/loaders.min.css">
+    <link rel="stylesheet" href="./css/ionicons.css">
+    <link rel="stylesheet" href="./css/materialDesignIcons.css">
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="../node_modules/monaco-editor/min/vs/editor/editor.main.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    
+</head>
+<body style="width: 100%;height: 778px;">
+
+<script>
+    // Monaco uses a custom amd loader that over-rides node's require.
+    // Keep a reference to node's require so we can restore it after executing the amd loader file.
+    var nodeRequire = global.require;
+</script>
+<script src="../node_modules/monaco-editor/min/vs/loader.js"></script>
+<script>
+    // Save Monaco's amd require and restore Node's require
+    var amdRequire = global.require;
+    global.require = nodeRequire;
+    var path = require('path');
+    function uriFromPath(_path) {
+        var pathName = path.resolve(_path).replace(/\\/g, '/');
+        if (pathName.length > 0 && pathName.charAt(0) !== '/') {
+            pathName = '/' + pathName;
+        }
+        return encodeURI('file://' + pathName);
+    }
+    amdRequire.config({
+        baseUrl: uriFromPath(path.join(__dirname, '../node_modules/monaco-editor/min'))
+    });
+//    amdRequire.config({
+//        baseUrl: uriFromPath('./node_modules/monaco-editor/min')
+//    });
+    self.module = undefined;
+    // workaround monaco-typescript not understanding the environment
+    self.process.browser = true;
+</script>
+
+<script>
+    Electron = require('electron');
+</script>
+<div id="app" style="width: 100%;height: 100%;"></div>
+<script src="http://localhost:8013/webpack-dev-server.js"></script>
+<script>
+    //判断是否是调试环境
+    if (process.env.NODE_ENV === 'development') {
+
+
+        script = document.createElement('script');
+        script.src = 'http://localhost:8013/build/bundle.js';
+        document.getElementsByTagName('body')[0].append(script);
+
+    } else {
+//        script = document.createElement('script');
+//        script.src = 'bundle.js';
+//        document.getElementsByTagName('body')[0].append(script);
+
+        script = document.createElement('script');
+        script.src = 'http://localhost:8013/build/bundle.js';
+        document.getElementsByTagName('body')[0].append(script);
+    }
+</script>
+<!--<script src="bundle.js"></script>-->
+
+
+
+
+</body>
+</html>
